@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "arcaneartifacts:item/aquatic_runestone",
+    "emissive": "arcaneartifacts:items/runestone_glow"
+  }
+}
