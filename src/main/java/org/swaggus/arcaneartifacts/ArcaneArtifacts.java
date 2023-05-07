@@ -4,14 +4,8 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
-import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
-
-import static net.minecraft.util.registry.Registry.ITEM;
+import org.swaggus.arcaneartifacts.util.ModLootTableModifiers;
 
 public class ArcaneArtifacts implements ModInitializer {
     public static final String MOD_ID = "arcaneartifacts";
@@ -23,5 +17,6 @@ public class ArcaneArtifacts implements ModInitializer {
     @Override
     public void onInitialize() {
         Artifacts.registerArtifacts();
+        ModLootTableModifiers.modifyLootTables();
     }
 }
