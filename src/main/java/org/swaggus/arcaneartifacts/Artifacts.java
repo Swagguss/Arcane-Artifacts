@@ -13,11 +13,14 @@ public class Artifacts {
     public static final Item AQUATIC_RUNESTONE = new AquaticRunestone(new Item.Settings().group(ArcaneArtifacts.ARCANE_ARTIFACTS_GROUP));
     public static final Item AETHERIAL_RUNESTONE = new AetherialRunestone(new Item.Settings().group(ArcaneArtifacts.ARCANE_ARTIFACTS_GROUP));
 
+    public static Item POCKET_RUNECRAFTER = new PocketRuneCrafter(new Item.Settings().group(ArcaneArtifacts.ARCANE_ARTIFACTS_GROUP));
+
     public static void registerArtifacts() {
         Registry.register(ITEM, new Identifier(ArcaneArtifacts.MOD_ID, "earthen_runestone"), EARTHEN_RUNESTONE);
         Registry.register(ITEM, new Identifier(ArcaneArtifacts.MOD_ID, "arid_runestone"), ARID_RUNESTONE);
         Registry.register(ITEM, new Identifier(ArcaneArtifacts.MOD_ID, "fiery_runestone"), FIERY_RUNESTONE);
         Registry.register(ITEM, new Identifier(ArcaneArtifacts.MOD_ID, "aquatic_runestone"), AQUATIC_RUNESTONE);
         Registry.register(ITEM, new Identifier(ArcaneArtifacts.MOD_ID, "aetherial_runestone"), AETHERIAL_RUNESTONE);
+        Registry.register(ITEM, new Identifier(ArcaneArtifacts.MOD_ID, "pocket_runecrafter"), POCKET_RUNECRAFTER);
     }
 }
